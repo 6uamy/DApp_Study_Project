@@ -9,5 +9,5 @@
 ## 계정 1에 배분한 tether token
 <img src='https://user-images.githubusercontent.com/79950091/183037586-468cf19a-417e-4108-b388-1e32b856f4df.png' width='550' height='300'>
 
-## 계정 1에 배분한 tether token
+## Convert from Ether to Wei
 <img src='https://user-images.githubusercontent.com/79950091/183037807-63d66d50-79f1-4b30-9987-edb680b1f2f3.png' width='500' height='70'>
