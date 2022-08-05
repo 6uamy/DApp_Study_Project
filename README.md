@@ -7,4 +7,4 @@
 <img src='https://user-images.githubusercontent.com/79950091/183036550-1b791f1c-934e-4288-bcc1-8bd87f6ddb1f.png' width='500' height='300'>
 
 ## 계정 1에 배분한 tether token
-<img src='https://user-images.githubusercontent.com/79950091/183037586-468cf19a-417e-4108-b388-1e32b856f4df.png' width='500' height='300'>
+<img src='https://user-images.githubusercontent.com/79950091/183037586-468cf19a-417e-4108-b388-1e32b856f4df.png' width='550' height='300'>
