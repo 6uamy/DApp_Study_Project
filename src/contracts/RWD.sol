@@ -3,7 +3,7 @@ pragma solidity ^0.5.0;
 contract RWD {
     string public name = 'Reward Token';
     string public symbol = 'RWD';
-    uint256 public totalSupply = 1000000000000000000; // 1 million tokens
+    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8 public decimals = 18;
 
     event Transfer(
@@ -47,7 +47,7 @@ contract RWD {
         balanceOf[_to] += _value;
         balanceOf[_from] -= _value;
         allowance[msg.sender][_from] -= _value;
-        emit Transfer(msg.sender, _to, _value);
+        emit Transfer(_from, _to, _value);
         return true;
     }
 }

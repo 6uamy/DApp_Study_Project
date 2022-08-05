@@ -1,20 +1,20 @@
 pragma solidity ^0.5.0;
 
 contract Tether {
-    string public name = 'Taek Tether';
-    string public symbol = 'USDT';
-    uint256 public totalSupply = 1000000000000000000; // 1 million tokens
-    uint8 public decimals = 18;
+    string  public name = "Taek Tether Token";
+    string  public symbol = "mUSDT";
+    uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
+    uint8   public decimals = 18;
 
     event Transfer(
         address indexed _from,
-        address indexed _to,
+        address indexed _to, 
         uint _value
     );
 
-    event Approvel(
+    event Approval(
         address indexed _owner,
-        address indexed _spender,
+        address indexed _spender, 
         uint _value
     );
 
@@ -25,11 +25,12 @@ contract Tether {
         balanceOf[msg.sender] = totalSupply;
     }
 
-    // 토큰 전송 함수
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        // 잔액이 보내고자 하는 value 보다 크거나 같아야 함.
+        // require that the value is greater or equal for transfer
         require(balanceOf[msg.sender] >= _value);
+         // transfer the amount and subtract the balance
         balanceOf[msg.sender] -= _value;
+        // add the balance
         balanceOf[_to] += _value;
         emit Transfer(msg.sender, _to, _value);
         return true;
@@ -37,17 +38,19 @@ contract Tether {
 
     function approve(address _spender, uint256 _value) public returns (bool success) {
         allowance[msg.sender][_spender] = _value;
-        emit Approvel(msg.sender, _spender, _value);
+        emit Approval(msg.sender, _spender, _value);
         return true;
     }
 
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {    
+    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);
+        // add the balance for transferFrom
         balanceOf[_to] += _value;
+        // subtract the balance for transferFrom
         balanceOf[_from] -= _value;
         allowance[msg.sender][_from] -= _value;
-        emit Transfer(msg.sender, _to, _value);
+        emit Transfer(_from, _to, _value);
         return true;
     }
 }
