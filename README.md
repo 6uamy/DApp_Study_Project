@@ -11,3 +11,8 @@
 
 ## Convert from Ether to Wei
 <img src='https://user-images.githubusercontent.com/79950091/183037807-63d66d50-79f1-4b30-9987-edb680b1f2f3.png' width='500' height='70'>
+
+## Mocha 테스트 프레임워크 실패/성공
+<img src='https://user-images.githubusercontent.com/79950091/183241746-8b26e0a0-4ca2-48e5-84dd-b9a98de654a6.png' width='500' height='300'>
+
+
