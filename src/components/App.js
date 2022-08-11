@@ -10,7 +10,7 @@ import ParticleSettings from './ParticleSettings.js';
 
 class App extends Component {
 
-    async UNSAFE_componentWillMount() {
+    async componentWillMount() {
         await this.loadWeb3()
         await this.loadBlockchainData()
     }
@@ -111,7 +111,7 @@ class App extends Component {
         let content
         // this.state.loading ? true일 경우 로딩 텍스트 false일 경우에 메인컨텐츠
         {this.state.loading ? content = 
-        <p id='loader' className='text-center' style={{margin:'30px', color:'white'}}>
+        <p id='loader' className='text-center' style={{margin:'30px', color:'whiten'}}>
         LOADING PLEASE...</p> : content = 
         <Main
         tetherBalance = {this.state.tetherBalance}
