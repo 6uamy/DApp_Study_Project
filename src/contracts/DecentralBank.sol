@@ -59,7 +59,7 @@ function unstakeTokens() public {
 // issue rewards
 function issueTokens() public {
     // require the owner to issue tokens only
-    require(msg.sender == owner, 'caller must be owner');
+    //require(msg.sender == owner, 'caller must be owner');
 
     for(uint i=0; i<stakers.length; i++) {
         address recipient = stakers[i];

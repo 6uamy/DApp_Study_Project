@@ -60,7 +60,10 @@ class Main extends Component {
                     }} 
                     className='btn btn-primary btn-lg btn-block'>WITHDRAW</button>
                     <div className='card-body text-center' style={{color:'blue'}}>
-                    AIRDROP <Airdrop stakingBalance = {this.props.stakingBalance}/> 
+                    AIRDROP <Airdrop 
+                    stakingBalance = {this.props.stakingBalance}
+                    rwdBalance = {this.props.rwdBalance}
+                    issueTokens = {this.props.issueTokens}/> 
                     </div>
                 </div>
             </div>
