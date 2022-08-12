@@ -1,4 +1,4 @@
-# Decentral bank Study project
+# 🖥️ Decentral bank Study project
 
 ## DApp 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
 
@@ -33,11 +33,33 @@
 
 ## Token 예금 하기
 
+``` javascript
+    // Tokens 예금 함수
+    stakeTokens = (amount) => {
+        this.setState({loading: true});
+        this.state.tether.methods.approve(this.state.decentralBank._address, amount).send({from: this.state.account}).on('transactionHash', (hash) => {
+        this.state.decentralBank.methods.depositTokens(amount).send({from: this.state.account}).on('transactionHash', (hash) => {
+            this.setState({loading: false})
+        });
+    });
+    }
+```
+
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/79950091/184348470-f7c76531-c509-4c4f-98a0-f604db4b44d4.gif' width='650' height='400'>
 </p>
 
 ## 예금한 Token 인출 하기
+
+``` javascript
+ // Tokens 출금 함수
+    unstakeTokens = () => {
+        this.setState({loading: true});
+        this.state.decentralBank.methods.unstakeTokens().send({from: this.state.account}).on('transactionHash', (hash) => {
+            this.setState({loading: false})
+        });
+    }
+```
 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/79950091/184348485-625ae28e-3e99-4857-9838-2656afb8c1fd.gif' width='650' height='400'>
@@ -45,6 +67,16 @@
 
 
 ## 예금액에 따른 RewardTokens 발행
+
+``` javascript
+// Tokens Rewards 함수
+    issueTokens = () => {
+        this.setState({loading: true})
+        this.state.decentralBank.methods.issueTokens().send({from: this.state.account}).on('transactionHash', (hash) => {
+            this.setState({loading: false})
+        });
+    }
+```
 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/79950091/184348493-53e6e468-789b-47cc-a332-9ea3cc581d7e.gif' width='650' height='400'>
