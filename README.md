@@ -30,7 +30,7 @@
     
 * 예금 및 출금 기능을 위한 버튼 / 오른쪽 상단의 현재 연결된 MetaMask 계정주소 / 예금 금액에 따른 Reward Tokens 보상
 
-## Token 예금 하기
+## [기능 1] Token 예금 하기
 
 ``` solidity
 // staking function
@@ -70,7 +70,7 @@ function depositTokens(uint256 _amount) public {
 <img src='https://user-images.githubusercontent.com/79950091/184348470-f7c76531-c509-4c4f-98a0-f604db4b44d4.gif' width='650' height='400'>
 </p>
 
-## 예금한 Token 인출 하기
+## [기능 2] 예금한 Token 인출 하기
 
 ``` solidity
 // unstake tokens
@@ -104,7 +104,7 @@ function unstakeTokens() public {
 </p>
 
 
-## 예금액에 따른 RewardTokens 발행
+## [기능 3] 예금액에 따른 RewardTokens 발행
 
 ``` solidity
 // issue rewards
