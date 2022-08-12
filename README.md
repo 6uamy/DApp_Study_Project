@@ -37,7 +37,9 @@
 ```
 ### <실행결과>
 
+<p>
 <img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='600' height='400'>
+</p>
 
 ## 탈중앙화 은행 Main 
 
