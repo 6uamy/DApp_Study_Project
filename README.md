@@ -33,6 +33,28 @@
 
 ## Token 예금 하기
 
+``` solidity
+// staking function
+function depositTokens(uint256 _amount) public {
+    // require staking amount to be greater than zero
+    require(_amount > 0, 'amount cannot be 0');
+
+    // 스테이킹할 tether tokens
+    tether.transferFrom(msg.sender, address(this), _amount);
+
+    // Update staking Balance
+    stakingBalance[msg.sender] += _amount;
+
+    if(!hasStaked[msg.sender]) {
+        stakers.push(msg.sender);
+    }
+
+    // Update staking Balance
+    isStaking[msg.sender] = true;
+    hasStaked[msg.sender] = true;
+}
+```
+
 ``` javascript
     // Tokens 예금 함수
     stakeTokens = (amount) => {
