@@ -18,3 +18,6 @@
 ## truffle exec test suite completed
 <img src='https://user-images.githubusercontent.com/79950091/183288664-7678fe43-4a54-4a47-950f-3548fe7b01d1.png' width='600' height='80'>
 
+## 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
+<img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='600' height='500'>
+
