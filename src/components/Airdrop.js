@@ -6,21 +6,22 @@ class Airdrop extends Component {
         super()
         this.state = {
             time: {},
-            seconds: 5
+            seconds: 10
         };
         this.timer = 0;
         this.startTimer = this.startTimer.bind(this);
         this.countDown = this.countDown.bind(this);
     }
 
+    // Timer 함수 시작 조건
     startTimer() {
-        if(this.timer == 0 && this.state.seconds > 0) {
-            this.timer = setInterval(this.countDown, 1000)
+        if(this.timer == 0 && this.state.seconds > 0 && this.props.rwdBalance == 0) {
+            this.timer = setInterval(this.countDown, 1000);
         }
     }
 
     countDown() {
-        let seconds = this.state.seconds - 1
+        let seconds = this.state.seconds - 1;
 
         this.setState({
             time: this.secondsToTime(seconds),
@@ -28,49 +29,49 @@ class Airdrop extends Component {
         })
 
         if(seconds == 0) {
-            clearInterval(this.timer)
+            clearInterval(this.timer);
         }
     }
 
     secondsToTime(secs)  {
-        let hours, minutes, seconds
-        hours = Math.floor(secs / (60 * 60))
+        let hours, minutes, seconds;
+        hours = Math.floor(secs / (60 * 60));
         
-        let devisor_for_minutes = secs % (60 * 60) 
-        minutes = Math.floor(devisor_for_minutes / 60)
+        let devisor_for_minutes = secs % (60 * 60);
+        minutes = Math.floor(devisor_for_minutes / 60);
 
-        let devisor_for_seconds = devisor_for_minutes % 60
-        seconds = Math.ceil(devisor_for_seconds)
+        let devisor_for_seconds = devisor_for_minutes % 60;
+        seconds = Math.ceil(devisor_for_seconds);
 
         let obj = {
             'h': hours,
             'm': minutes,
             's': seconds
         }
-        return obj
+        return obj;
     }
 
     componentDidMount() {
-        let timeLeftVar = this.secondsToTime(this.state.seconds)
-        this.setState({time: timeLeftVar})
+        let timeLeftVar = this.secondsToTime(this.state.seconds);
+        this.setState({time: timeLeftVar});
     }
 
     airdropReleaseTokens() {
-        let stakingB = this.props.stakingBalance
-        if(stakingB >= '50000000000000000000') {
-            this.startTimer()
+        let stakingB = this.props.stakingBalance;
+        if(stakingB >= '30000000000000000000') {
+            this.startTimer();
         }
         if(this.state.seconds == 0) {
-            this.props.issueTokens()
+            this.props.issueTokens();
+            this.timer = 0;
         }
     }
 
     render() {
-        {this.airdropReleaseTokens()}
         return (
             <div style={{color:'black'}}>
                 {this.state.time.m}:{this.state.time.s}
-
+                {this.airdropReleaseTokens()}
             </div>
         )
     }

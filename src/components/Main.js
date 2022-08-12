@@ -48,7 +48,7 @@ class Main extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <button type='submit' className='btn btn-primary btn-lg btn-block'>DEPOSIT</button>
+                                <button type='submit' className='btn btn-primary btn-lg btn-block'>예금 하기</button>
                             </div>
                     </form>
                     <button 
@@ -58,9 +58,9 @@ class Main extends Component {
                             this.props.unstakeTokens()
                         )
                     }} 
-                    className='btn btn-primary btn-lg btn-block'>WITHDRAW</button>
+                    className='btn btn-primary btn-lg btn-block'>출금 하기</button>
                     <div className='card-body text-center' style={{color:'blue'}}>
-                    AIRDROP <Airdrop 
+                    RewardTokens <Airdrop 
                     stakingBalance = {this.props.stakingBalance}
                     rwdBalance = {this.props.rwdBalance}
                     issueTokens = {this.props.issueTokens}/> 
