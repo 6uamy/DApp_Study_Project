@@ -49,13 +49,25 @@
     
 * 예금 및 출금 기능을 위한 버튼 / 오른쪽 상단의 현재 연결된 MetaMask 계정주소 / 예금 금액에 따른 Reward Tokens 보상
 
+## Token 예금 하기
+
+<p align='center'>
+<img src='https://user-images.githubusercontent.com/79950091/184348470-f7c76531-c509-4c4f-98a0-f604db4b44d4.gif' width='650' height='400'>
+</p>
+
+## 예금한 Token 인출 하기
+
+<p align='center'>
+<img src='https://user-images.githubusercontent.com/79950091/184348485-625ae28e-3e99-4857-9838-2656afb8c1fd.gif' width='650' height='400'>
+</p>
+
+
 ## 예금액에 따른 RewardTokens 발행
 
 <p align='center'>
-<img src='https://user-images.githubusercontent.com/79950091/184346601-b0602d3b-7b0e-44d8-94a0-c525dd2adfed.gif' width='650' height='400'>
+<img src='https://user-images.githubusercontent.com/79950091/184348493-53e6e468-789b-47cc-a332-9ea3cc581d7e.gif' width='650' height='400'>
 </p>
 
-![ezgif com-gif-maker](https://user-images.githubusercontent.com/79950091/184346601-b0602d3b-7b0e-44d8-94a0-c525dd2adfed.gif)
 
 
 
