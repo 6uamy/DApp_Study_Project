@@ -1,6 +1,6 @@
 # Decentral bank Study project
 
-## 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
+## DApp 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
 
 ``` javascript
     // Web3 연결
