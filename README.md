@@ -17,7 +17,6 @@
         }
     }
 ```
-### 실행결과 >
 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='650' height='400'>
