@@ -47,7 +47,7 @@
 <img src='https://user-images.githubusercontent.com/79950091/184335608-ff2faac0-7115-46a3-b856-0e6c027cb8ac.png' width='650' height='400'>
 </p>
     
-#### 예금 및 출금 기능을 위한 버튼 / 오른쪽 상단의 현재 연결된 MetaMask 계정주소 / 예금 금액에 따른 Reward Tokens 보상
+* 예금 및 출금 기능을 위한 버튼 / 오른쪽 상단의 현재 연결된 MetaMask 계정주소 / 예금 금액에 따른 Reward Tokens 보상
 
 
 
