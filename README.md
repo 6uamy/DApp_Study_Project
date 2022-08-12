@@ -22,6 +22,7 @@
 <img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='700' height='500'>
 
 ``` javascript
+    // Web3 연결
     async loadWeb3() {
         if(window.ethereum) {
             window.web3 = new Web3(window.ethereum);
