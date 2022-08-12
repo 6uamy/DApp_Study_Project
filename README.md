@@ -21,6 +21,7 @@
 ## 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
 <img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='700' height='500'>
 ``` JavaScript
+
 // web3 연결
     async loadWeb3() {
         if(window.ethereum) {
@@ -34,5 +35,5 @@
             window.alert('No ethereum browser detected! Check out MetaMask!');
         }
     }
-    ```
+```
 
