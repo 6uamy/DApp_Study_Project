@@ -1,6 +1,6 @@
 # 🖥️ Decentral bank Study project
 
-## DApp 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
+### DApp 접속 시 Web3 환경 체크와 메타마스크를 통한 연동
 
 ``` javascript
     // Web3 연결
@@ -22,7 +22,7 @@
 <img src='https://user-images.githubusercontent.com/79950091/184334161-6988da49-2548-4d8a-90bb-c7416a64eba3.png' width='650' height='400'>
 </p>
 
-## 탈중앙화 은행 Main 
+### 탈중앙화 은행 Main 
 
 <p align='center'>
 <img src='https://user-images.githubusercontent.com/79950091/184335608-ff2faac0-7115-46a3-b856-0e6c027cb8ac.png' width='650' height='400'>
@@ -30,7 +30,7 @@
     
 * 예금 및 출금 기능을 위한 버튼 / 오른쪽 상단의 현재 연결된 MetaMask 계정주소 / 예금 금액에 따른 Reward Tokens 보상
 
-## [기능 1] Token 예금 하기
+### [기능 1] Token 예금 하기
 
 ``` solidity
 // staking function
@@ -70,7 +70,7 @@ function depositTokens(uint256 _amount) public {
 <img src='https://user-images.githubusercontent.com/79950091/184348470-f7c76531-c509-4c4f-98a0-f604db4b44d4.gif' width='650' height='400'>
 </p>
 
-## [기능 2] 예금한 Token 인출 하기
+### [기능 2] 예금한 Token 인출 하기
 
 ``` solidity
 // unstake tokens
@@ -104,7 +104,7 @@ function unstakeTokens() public {
 </p>
 
 
-## [기능 3] 예금액에 따른 RewardTokens 발행
+### [기능 3] 예금액에 따른 RewardTokens 발행
 
 ``` solidity
 // issue rewards
